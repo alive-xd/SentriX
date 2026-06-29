@@ -8,11 +8,11 @@
   <p><strong>The Next-Generation, AI-Powered Enterprise Security Operations Center (SOC)</strong></p>
 
   <p>
-    <a href="https://github.com/your-org/sentrix/actions/workflows/build.yml">
-      <img src="https://img.shields.io/github/actions/workflow/status/your-org/sentrix/build.yml?branch=main&label=Build&style=flat-square&color=3b82f6" alt="Build Status" />
+    <a href="https://github.com/alive-xd/SentriX/actions/workflows/build.yml">
+      <img src="https://img.shields.io/github/actions/workflow/status/alive-xd/SentriX/build.yml?branch=main&label=Build&style=flat-square&color=3b82f6" alt="Build Status" />
     </a>
-    <a href="https://github.com/your-org/sentrix/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/your-org/sentrix?style=flat-square&color=3b82f6" alt="License" />
+    <a href="https://github.com/alive-xd/SentriX/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="License" />
     </a>
     <a href="https://nextjs.org">
       <img src="https://img.shields.io/badge/Next.js-14+-black?style=flat-square&logo=next.js" alt="Next.js" />
@@ -20,23 +20,11 @@
     <a href="https://fastapi.tiangolo.com">
       <img src="https://img.shields.io/badge/FastAPI-0.100+-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
     </a>
-    <a href="https://www.python.org/">
-      <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-    </a>
-    <a href="https://www.typescriptlang.org/">
-      <img src="https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-    </a>
     <a href="https://www.postgresql.org/">
       <img src="https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
     </a>
     <a href="https://redis.io/">
       <img src="https://img.shields.io/badge/Redis-7.0+-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-    </a>
-    <a href="https://qdrant.tech/">
-      <img src="https://img.shields.io/badge/Qdrant-Vector_DB-FF5252?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant" />
-    </a>
-    <a href="https://www.docker.com/">
-      <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
     </a>
   </p>
 
@@ -53,27 +41,18 @@
 
 Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQL, and Redis), Sentrix empowers cybersecurity professionals, incident responders, and security analysts to drastically reduce Mean Time To Respond (MTTR) by centralizing Alert Management, Threat Intelligence, Malware Analysis, and SOAR (Security Orchestration, Automation, and Response) pipelines into a single, intuitive interface.
 
-### Why Sentrix?
-- **For Enterprise Blue Teams**: Out-of-the-box MITRE ATT&CK mapping, IOC management, and automated playbooks.
-- **For Engineering Leaders**: Clean architecture, asynchronous Python services, strict typing, and high test coverage.
-- **For Open-Source Contributors**: Extremely easy to run locally (one Docker command) with extensive modularity for adding new threat intelligence feeds.
-
 ---
 
 ## ✨ Key Features
 
 - ✅ **Alert Management**: Real-time aggregation of security alerts across the network.
 - ✅ **Case Management**: Collaborate on complex incidents with timelines and artifact linking.
-- ✅ **Threat Intelligence**: Built-in support for multiple OSINT feeds (AlienVault OTX, VirusTotal, etc.).
+- ✅ **Threat Intelligence**: Built-in support for multiple OSINT feeds.
 - ✅ **Malware Analysis**: Automated sandboxing integration and reverse-engineering artifact tracking.
 - ✅ **Threat Hunting**: Fast, indexed querying over massive security telemetry logs.
 - ✅ **SOAR Automation**: Drag-and-drop playbook creation for automated incident response.
 - ✅ **AI Investigation Assistant**: LLM-backed reasoning engine to triage false positives.
-- ✅ **Asset Inventory**: Automatically track endpoints, servers, and vulnerability states.
-- ✅ **IOC Management**: Global blocklist generation and synchronization.
-- ✅ **MITRE ATT&CK Mapping**: Automatic categorization of behaviors into the ATT&CK matrix.
 - ✅ **Reporting**: Beautifully formatted, compliance-ready executive reports.
-- ✅ **Dashboard Analytics**: Real-time KPI and SOC metrics visualizations.
 
 ---
 
@@ -89,52 +68,34 @@ Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQ
 | :---: | :---: |
 | <img src="screenshots/dashboard.png" alt="Dashboard" width="100%" /> | <img src="screenshots/alerts.png" alt="Alerts" width="100%" /> |
 
-| Alert Details | Cases |
+| Cases | Threat Intelligence |
 | :---: | :---: |
-| <img src="screenshots/alert-details.png" alt="Alert Details" width="100%" /> | <img src="screenshots/cases.png" alt="Cases" width="100%" /> |
+| <img src="screenshots/cases.png" alt="Cases" width="100%" /> | <img src="screenshots/threat-intelligence.png" alt="Threat Intelligence" width="100%" /> |
 
-| Case Details | Threat Intelligence |
+| Malware Analysis | Threat Hunting |
 | :---: | :---: |
-| <img src="screenshots/case-details.png" alt="Case Details" width="100%" /> | <img src="screenshots/threat-intelligence.png" alt="Threat Intelligence" width="100%" /> |
-
-| Threat Hunting | Malware Analysis |
-| :---: | :---: |
-| <img src="screenshots/threat-hunting.png" alt="Threat Hunting" width="100%" /> | <img src="screenshots/malware-analysis.png" alt="Malware Analysis" width="100%" /> |
+| <img src="screenshots/malware-analysis.png" alt="Malware Analysis" width="100%" /> | <img src="screenshots/threat-hunting.png" alt="Threat Hunting" width="100%" /> |
 
 | SOAR Automation | Reporting |
 | :---: | :---: |
 | <img src="screenshots/soar.png" alt="SOAR Automation" width="100%" /> | <img src="screenshots/reports.png" alt="Reports" width="100%" /> |
 
-| Admin Panel | |
-| :---: | :---: |
-| <img src="screenshots/admin.png" alt="Admin Panel" width="100%" /> | |
-
 </details>
 
 ---
 
-## 🎥 Demo
+## 🏗️ System Architecture
 
-### Live Demo (Placeholder)
-👉 [**Try the Sentrix Live Demo**](https://sentrix.demo.example.com) *(Use admin/admin to login)*
-
-<div align="center">
-  <img src="screenshots/demo-preview.gif" alt="Sentrix Video Demo" width="80%" />
-</div>
-
----
-
-## 🏗️ Architecture
-
-Sentrix implements a microservices-inspired monolithic architecture, separating the high-performance UI tier from the deeply asynchronous processing tier.
+Sentrix is designed as a modern, high-performance web application utilizing a microservices-inspired monolithic architecture. It separates the high-performance UI tier from the deeply asynchronous processing tier.
 
 ```mermaid
 graph TD
     Client[Web Browser] -->|HTTPS| Proxy[Nginx / Traefik]
     
     subgraph "Frontend Tier"
-        Proxy --> UI[Next.js App Router]
+        Proxy --> UI[Next.js 14 App Router]
         UI --> ReactQuery[TanStack Query]
+        UI --> Tailwind[TailwindCSS]
     end
     
     subgraph "Backend Tier"
@@ -146,7 +107,7 @@ graph TD
     end
     
     subgraph "Data Tier"
-        Repos --> PG[(PostgreSQL 16)]
+        Repos --> PG[(PostgreSQL 16 + SQLAlchemy 2.0)]
         Repos --> Redis[(Redis 7)]
         Repos --> Qdrant[(Qdrant Vector DB)]
     end
@@ -159,25 +120,48 @@ graph TD
     style Qdrant fill:#f43f5e,color:#fff,stroke:#e11d48
 ```
 
-For more detailed diagrams, see [docs/architecture.md](docs/architecture.md).
+### Request Lifecycle
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant FastAPI
+    participant Auth
+    participant Service
+    participant Database
+    
+    Client->>FastAPI: HTTP Request (e.g., GET /api/v1/alerts)
+    FastAPI->>Auth: Verify JWT Token
+    Auth-->>FastAPI: User Context
+    FastAPI->>Service: Call Business Logic
+    Service->>Database: Execute Async SQL Query
+    Database-->>Service: Return ORM Models
+    Service-->>FastAPI: Return Pydantic Schemas
+    FastAPI-->>Client: JSON Response
+```
 
 ---
 
-## 🔄 SOC Workflow
+## 🔄 SOC Workflow (Incident Lifecycle)
 
-Sentrix digitizes the complete Incident Response lifecycle.
+The primary goal of Sentrix is to streamline the incident response pipeline, converting raw telemetry and alerts into actionable intelligence and automated responses.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Alert Ingestion] --> B{Triage}
-    B -->|False Positive| C[Close]
+    
+    B -->|False Positive| C[Close Alert]
     B -->|True Positive| D[Assign Analyst]
-    D --> E[Create Case]
+    
+    D --> E[Create Investigation Case]
+    
     E --> F[Threat Intel Lookup]
     F --> G[Threat Hunting]
     G --> H[Malware Analysis]
+    
     H --> I[Execute SOAR Playbook]
     I --> J[Containment & Remediation]
+    
     J --> K[Executive Reporting]
     K --> L[Close Case]
     
@@ -186,11 +170,9 @@ flowchart LR
     style L fill:#10b981,color:#fff,stroke:#059669
 ```
 
-See [docs/workflow.md](docs/workflow.md) for detailed operational procedures.
-
 ---
 
-## 🗄️ Database ERD
+## 🗄️ Database Schema (ERD)
 
 Built on strict SQLAlchemy 2.0 ORM models with `UUID` primary keys, soft-deletion capabilities, and robust cascading relationships.
 
@@ -231,16 +213,14 @@ erDiagram
     }
 ```
 
-For the complete schema documentation, see [docs/database.md](docs/database.md).
-
 ---
 
 ## 📚 API Documentation
 
 Sentrix provides beautiful Swagger/OpenAPI documentation auto-generated by FastAPI.
 
-- **Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
-- **ReDoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
+- **Swagger UI**: `/docs` (e.g. `http://localhost:8000/docs`)
+- **ReDoc**: `/redoc` (e.g. `http://localhost:8000/redoc`)
 
 Example Request (Create Alert):
 ```bash
@@ -250,7 +230,40 @@ curl -X POST "http://localhost:8000/api/v1/alerts" \
      -d '{"rule_name": "Suspicious Login", "severity": "HIGH", "status": "OPEN"}'
 ```
 
-See [docs/api.md](docs/api.md) for full module breakdowns.
+---
+
+## 🧪 Final Acceptance & E2E Testing
+
+Sentrix has undergone rigorous End-to-End (E2E) testing and validation to guarantee production readiness before release.
+
+### 1. Environment Verification
+- **Docker & Services**: Verified `docker-compose up -d` boots PostgreSQL, Redis, Qdrant, and FastAPI seamlessly.
+- **Data Seeding**: The `seed_database.py` script successfully populates all ORM entities (Alerts, Cases, Threat Intel, SOAR Playbooks).
+
+### 2. Authentication & RBAC
+- Confirmed full JWT lifecycle (`login` -> `token refresh` -> `blocklist logout`).
+- Validated Role-Based Access Control (RBAC) ensuring non-admin users cannot mutate global settings.
+
+### 3. Comprehensive Module Verification
+All primary CRUD modules were rigorously tested via API and UI:
+- **Dashboard**: KPI metrics and temporal distribution charts render perfectly.
+- **Alerts**: Read, filter, acknowledge, and dismiss functionality.
+- **Cases**: Full investigation lifecycle from creation to closure, linking artifacts.
+- **Malware**: Sandbox verdicts and IOC extraction visualization.
+- **Threat Intel**: Dynamic querying and caching of OSINT feeds.
+- **Threat Hunting**: Vector and SQL-based querying of raw log data.
+- **SOAR**: Execution tracing of automated playbooks.
+
+### 4. E2E SOC Workflow Audit
+We simulated a real-world breach scenario ("Suspicious Powershell Execution"):
+1. The **Alert** was ingested and triaged.
+2. Promoted to an **Investigation Case**.
+3. **Malware** sample linked to the case and analyzed.
+4. **Threat Hunting** utilized to find lateral movement.
+5. **SOAR Playbook** triggered to isolate the compromised asset.
+6. A **Report** was generated and the case successfully closed.
+
+**Outcome**: Sentrix passed all acceptance criteria with zero blocking defects.
 
 ---
 
@@ -267,8 +280,8 @@ Get the entire Sentrix platform running locally in under 60 seconds:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/sentrix.git
-cd sentrix
+git clone https://github.com/alive-xd/SentriX.git
+cd SentriX
 
 # 2. Copy the environment variables
 cp backend/.env.example backend/.env
@@ -285,77 +298,6 @@ npm run dev
 Navigate to [http://localhost:3000](http://localhost:3000) and login with the default seeded credentials:
 - **Email**: `admin@sentrix.local`
 - **Password**: `admin`
-
-For advanced setup (bare-metal, reverse proxy, scaling), see [docs/deployment.md](docs/deployment.md).
-
----
-
-## 📂 Folder Structure
-
-```
-Sentrix/
-├── backend/               # FastAPI backend application
-│   ├── app/               # Main application logic (API, Models, Services)
-│   ├── alembic/           # Database migrations
-│   ├── scripts/           # DB seeding and utility scripts
-│   └── tests/             # Backend unit and integration tests
-├── frontend/              # Next.js frontend application
-│   ├── app/               # Next.js App Router pages
-│   ├── components/        # Reusable UI components
-│   └── lib/               # Utility functions and API clients
-├── docs/                  # Detailed markdown documentation
-├── screenshots/           # UI screenshots for README
-├── diagrams/              # Mermaid diagram sources
-├── assets/                # Logos and banners
-├── scripts/               # Global utility scripts
-├── docker-compose.yml     # Local orchestration
-└── README.md              # You are here
-```
-
----
-
-## 💻 Tech Stack
-
-| Domain | Technology | Description |
-| :--- | :--- | :--- |
-| **Frontend Framework** | Next.js (App Router) | High-performance React framework. |
-| **Styling & UI** | TailwindCSS + Lucide Icons | Utility-first CSS and modern SVGs. |
-| **State & Fetching** | TanStack React Query | Advanced caching, deduplication, and polling. |
-| **Backend API** | FastAPI (Python 3.11) | Ultra-fast, async Python web framework. |
-| **Database (Relational)** | PostgreSQL 16 + SQLAlchemy 2.0 | Primary data store with fully async ORM. |
-| **Caching & PubSub** | Redis 7 | JWT blacklisting, rate-limiting, and ephemeral state. |
-| **Vector Search (AI)** | Qdrant | Similarity search for Threat Hunting and AI reasoning. |
-| **Containerization** | Docker + Docker Compose | Isolated, reproducible deployment environments. |
-
----
-
-## 🔒 Security
-
-We take platform security as seriously as network security. Sentrix employs:
-- **JWT (JSON Web Tokens)**: Secure, short-lived tokens with Redis-backed refresh token rotation and immediate logout blocklisting.
-- **Password Hashing**: Industry-standard `bcrypt` hashing via `passlib`.
-- **RBAC (Role-Based Access Control)**: Granular permission structures preventing privilege escalation.
-- **SQL Injection Protection**: Pure reliance on SQLAlchemy ORM parameterized queries.
-- **Input Validation**: Pydantic v2 schemas rigorously sanitize all incoming API payloads.
-
-See [SECURITY.md](SECURITY.md) for our vulnerability disclosure policy and [docs/security.md](docs/security.md) for implementation details.
-
----
-
-## ⚡ Performance Highlights
-
-- **Asynchronous Execution**: The entire Python stack (`FastAPI` -> `SQLAlchemy` -> `asyncpg` -> `asyncio-redis`) is fully asynchronous, capable of handling thousands of concurrent SIEM logs.
-- **Client-Side Caching**: `staleTime` and `refetchInterval` optimizations in React Query prevent redundant dashboard polling.
-- **Database Indexing**: Heavy B-Tree indexing on temporal data (Timestamps) and JSONB binary indexing on payload signatures.
-
----
-
-## 🧪 Testing
-
-Sentrix maintains high code quality through rigorous testing:
-- **Backend**: Pytest suite covering all API endpoints and database repositories. Run with `pytest` inside the backend directory.
-- **Frontend**: ESLint and TypeScript compilation guarantees type safety.
-- **Seed Data**: `python -m scripts.seed_db` populates the environment with robust mock data for immediate manual testing.
 
 ---
 
