@@ -81,40 +81,35 @@ Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQ
 
 ## 📸 Screenshots
 
-*Explore the platform through our highly-polished UI.*
-
-<details>
-<summary><b>View Gallery (Click to expand)</b></summary>
-<br/>
+> Click any image to view full size.
 
 | Dashboard | Alerts |
-| :---: | :---: |
-| <img src="screenshots/dashboard.png" alt="Dashboard" width="100%" /> | <img src="screenshots/alerts.png" alt="Alerts" width="100%" /> |
+|-----------|--------|
+| ![Dashboard](screenshots/dashboard.png) | ![Alerts](screenshots/alerts.png) |
+| Real-time threat metrics with alert severity breakdown and analyst workload distribution | Active alert queue with MITRE ATT&CK technique tagging and one-click case promotion |
 
 | Cases | Threat Intelligence |
-| :---: | :---: |
-| <img src="screenshots/cases.png" alt="Cases" width="100%" /> | <img src="screenshots/threat-intelligence.png" alt="Threat Intelligence" width="100%" /> |
+|-------|-------------------|
+| ![Cases](screenshots/cases.png) | ![Threat Intel](screenshots/threat-intelligence.png) |
+| Full incident timeline with artifact linking, analyst notes, and severity tracking | IOC enrichment via AlienVault OTX and VirusTotal with automated reputation scoring |
 
 | Malware Analysis | Threat Hunting |
-| :---: | :---: |
-| <img src="screenshots/malware-analysis.png" alt="Malware Analysis" width="100%" /> | <img src="screenshots/threat-hunting.png" alt="Threat Hunting" width="100%" /> |
+|-----------------|----------------|
+| ![Malware](screenshots/malware-analysis.png) | ![Hunting](screenshots/threat-hunting.png) |
+| Sandbox verdict display with SHA256 tracking, threat score, and case linkage | Fast indexed querying over security telemetry with JSONB binary search |
 
 | SOAR Automation |
-| :---: |
-| <img src="screenshots/soar.png" alt="SOAR Automation" width="100%" /> |
+|----------------|
+| ![SOAR](screenshots/soar.png) |
+| Drag-and-drop playbook builder with ~120ms execution overhead and automated containment actions |
 
-</details>
+## 🎥 Demo Walkthrough
 
----
+[![Watch Demo](screenshots/dashboard.png)](https://loom.com/your-link-here)
 
-## 🎥 Demo
+> 3-min walkthrough — Docker boot → Alert ingestion → Case creation → SOAR playbook execution
 
-### Live Demo (Placeholder)
-👉 [**Try the Sentrix Live Demo**](https://sentrix.demo.example.com) *(Use admin/admin to login)*
-
-<div align="center">
-  <img src="screenshots/demo-preview.gif" alt="Sentrix Video Demo" width="80%" />
-</div>
+*Record free with [Loom](https://loom.com)*
 
 ---
 
