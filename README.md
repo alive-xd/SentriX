@@ -8,9 +8,15 @@
   <p><strong>A Modern Open-Source Security Operations Center (SOC) Workspace</strong></p>
 
   <p>
-    <img src="https://img.shields.io/github/commit-activity/m/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub commit activity" />
-    <img src="https://img.shields.io/github/last-commit/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub last commit" />
-    <img src="https://img.shields.io/github/repo-size/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub repo size" />
+    <a href="https://github.com/alive-xd/SentriX/stargazers">
+      <img src="https://img.shields.io/github/stars/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub Stars" />
+    </a>
+    <a href="https://github.com/alive-xd/SentriX/network/members">
+      <img src="https://img.shields.io/github/forks/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub Forks" />
+    </a>
+    <a href="https://github.com/alive-xd/SentriX/issues">
+      <img src="https://img.shields.io/github/issues/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub Issues" />
+    </a>
   </p>
 
   <p>
