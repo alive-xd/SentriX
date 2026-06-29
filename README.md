@@ -8,6 +8,12 @@
   <p><strong>The Next-Generation, AI-Powered Enterprise Security Operations Center (SOC)</strong></p>
 
   <p>
+    <img src="https://img.shields.io/github/commit-activity/m/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub commit activity" />
+    <img src="https://img.shields.io/github/last-commit/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub last commit" />
+    <img src="https://img.shields.io/github/repo-size/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub repo size" />
+  </p>
+
+  <p>
     <a href="https://github.com/alive-xd/SentriX/actions/workflows/build.yml">
       <img src="https://img.shields.io/github/actions/workflow/status/alive-xd/SentriX/build.yml?branch=main&label=Build&style=flat-square&color=3b82f6" alt="Build Status" />
     </a>
@@ -105,11 +111,11 @@ Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQ
 
 ## 🎥 Demo Walkthrough
 
-[![Watch Demo](screenshots/dashboard.png)](https://loom.com/your-link-here)
+[![Watch Demo](screenshots/dashboard.png)](https://loom.com/REPLACE_WITH_YOUR_LINK)
 
 > 3-min walkthrough — Docker boot → Alert ingestion → Case creation → SOAR playbook execution
 
-*Record free with [Loom](https://loom.com)*
+*Record free at [loom.com](https://loom.com)*
 
 ---
 
