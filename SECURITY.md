@@ -13,7 +13,7 @@ Currently, the following versions of Sentrix are being supported with security u
 
 We take the security of Sentrix very seriously. If you discover a security vulnerability within Sentrix, please DO NOT disclose it publicly.
 
-Instead, please send an e-mail to our security team at **security@sentrix.local**. All security vulnerabilities will be promptly addressed.
+Instead, please send an e-mail to our security team at **sushen.d3v@gmail.com**. All security vulnerabilities will be promptly addressed.
 
 ### What to include in your report:
 - A description of the vulnerability.
