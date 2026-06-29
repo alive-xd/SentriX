@@ -1,11 +1,11 @@
-<div align="center">
+﻿<div align="center">
   <img src="assets/banner.png" alt="Sentrix Banner" width="100%" />
 
   <br />
   <br />
 
   <h1>🛡️ Sentrix Platform</h1>
-  <p><strong>The Next-Generation, AI-Powered Enterprise Security Operations Center (SOC)</strong></p>
+  <p><strong>A Modern Open-Source Security Operations Center (SOC) Workspace</strong></p>
 
   <p>
     <img src="https://img.shields.io/github/commit-activity/m/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub commit activity" />
@@ -35,7 +35,7 @@
   </p>
 
   <p>
-    <strong>A high-performance, open-source security intelligence platform built for modern blue teams.</strong>
+    <strong>Designed using enterprise architecture patterns for modern blue teams.</strong>
   </p>
 </div>
 
@@ -43,45 +43,59 @@
 
 ## 🌟 Overview
 
-**Sentrix** is a feature-complete, enterprise-grade Security Operations Center (SOC) platform designed to aggregate, analyze, and act upon cyber threats in real-time. 
+**Sentrix** is a modular, service-oriented Security Operations Center (SOC) workspace. 
 
-Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQL, and Redis), Sentrix empowers cybersecurity professionals, incident responders, and security analysts to drastically reduce Mean Time To Respond (MTTR) by centralizing Alert Management, Threat Intelligence, Malware Analysis, and SOAR (Security Orchestration, Automation, and Response) pipelines into a single, intuitive interface.
+Built using enterprise architecture patterns (Next.js App Router, FastAPI, PostgreSQL, and Redis), Sentrix provides a robust foundation for building advanced security workflows. It centralizes Alert Management, Threat Intelligence tracking, and Case Collaboration into a single, intuitive interface, providing developers and security teams with a highly extensible platform to build upon.
 
-## 🏢 Enterprise Use Cases
+## 🏢 Use Cases
 
-- **Managed Security Service Providers (MSSPs)**: Utilize Sentrix's multi-tenant architecture to isolate and manage incidents for diverse client environments.
-- **In-House SOCs**: Aggregate alerts from existing SIEMs (Splunk, Elastic) and act as the primary pane of glass for Analysts.
-- **Incident Response Retainers**: Quickly deploy Sentrix into a compromised environment using the single Docker command to establish an immediate C2 for investigation.
-- **Cyber Range & Education**: Train junior analysts using realistic seeded data and simulated malware investigations.
+- **Development Foundation**: Implements a modular service-oriented backend perfect for building custom SOC solutions.
+- **Incident Response Tooling**: Quickly deploy Sentrix into an environment using Docker to establish a central tracking workspace.
+- **Cyber Range & Education**: Supports seeded datasets for realistic development and demonstrations, training junior analysts on incident response workflows.
 
-## 📊 Platform Statistics
+## 📊 Project Statistics
 
-| Metric | Capability |
+| Metric | Verified Count |
 | :--- | :--- |
-| **Max Ingestion Rate** | ~15,000 EPS (Events Per Second) |
-| **Average Query Latency** | < 45ms (Indexed JSONB Fields) |
-| **Playbook Execution Time** | ~120ms Overhead |
-| **Concurrent Analysts** | 500+ (Stateless JWT via Redis) |
+| **Frontend Pages** | 29 |
+| **REST API Endpoints** | 81 |
+| **Database Tables** | 26 |
+| **Backend Services** | 13 |
+| **Seeded Alerts** | 485 |
+| **Audit Log Entries** | 1000 |
 
 ## 🎯 Design Goals
 
-1. **Uncompromising Speed**: The backend must never block. Full asynchronous Python adoption (`asyncio`, `asyncpg`, `httpx`).
-2. **Actionable Context**: Analysts should never have to pivot to a different tab. All Threat Intel and Malware data is embedded directly into the Case.
+1. **Modern Architecture**: Full asynchronous Python adoption (syncio, syncpg) backed by a strict Repository/Service pattern.
+2. **Actionable Context**: Centralized dashboards linking Threat Intel and Malware metadata directly into Cases.
 3. **Frictionless Deployment**: Zero complicated Kubernetes manifests required for initial deployment; just pure Docker Compose.
-4. **Beautiful UX**: Security tools shouldn't look like they were built in 1998. Sentrix leverages TailwindCSS for a premium dark-mode aesthetic.
+4. **Beautiful UX**: Sentrix leverages TailwindCSS, shadcn/ui, and Framer Motion for a premium dark-mode aesthetic.
 
 ---
 
-## ✨ Key Features
+## ✨ Current Capabilities
 
-- ✅ **Alert Management**: Real-time aggregation of security alerts across the network.
-- ✅ **Case Management**: Collaborate on complex incidents with timelines and artifact linking.
-- ✅ **Threat Intelligence**: Built-in support for multiple OSINT feeds.
-- ✅ **Malware Analysis**: Automated sandboxing integration and reverse-engineering artifact tracking.
-- ✅ **Threat Hunting**: Fast, indexed querying over massive security telemetry logs.
-- ✅ **SOAR Automation**: Drag-and-drop playbook creation for automated incident response.
-- ✅ **AI Investigation Assistant**: LLM-backed reasoning engine to triage false positives.
-- ✅ **Reporting**: Beautifully formatted, compliance-ready executive reports.
+### ✅ Fully Implemented
+- **Alert Management**: Full CRUD REST APIs and UI for managing security alerts.
+- **Case Management**: Collaborate on incidents with dedicated timelines and artifact linking.
+- **Authentication**: Stateless JWT lifecycle with Redis-backed refresh token blocklisting.
+- **Audit Logging**: Comprehensive internal tracking of user actions.
+- **Pagination & Filtering**: Standardized across major data grids.
+
+### ⚠️ Partially Implemented
+- **Basic Global Search**: Broad SQL ILIKE searches across primary entities.
+- **Foundational Role-Based Access Control**: Database models and basic superuser enforcement.
+- **Threat Intel IOC Tracking**: Local database management of indicators (IPs, hashes).
+- **Malware Sample Management**: Tracking for reverse-engineering artifact metadata.
+- **Dashboard**: Aggregate metric displays and recent activity feeds.
+- **Organizational Grouping**: Foundational multi-tenant models.
+
+### 🗺️ Planned Roadmap
+- **AI Investigation Workspace (Architecture Ready)**: UI is complete; backend currently returns mocked reasoning steps pending LLM integration.
+- **SOAR Playbook Management**: Drag-and-drop playbook design UI is complete; execution engine planned.
+- **Threat Hunting Workspace**: Query saving exists; advanced telemetry search engine planned.
+- **External Integrations**: VirusTotal, AlienVault OTX, and Sandbox API synchronization.
+- **Executive Reporting**: Scheduled PDF report generation.
 
 ---
 
@@ -92,28 +106,28 @@ Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQ
 | Dashboard | Alerts |
 |-----------|--------|
 | ![Dashboard](screenshots/dashboard.png) | ![Alerts](screenshots/alerts.png) |
-| Real-time threat metrics with alert severity breakdown and analyst workload distribution | Active alert queue with MITRE ATT&CK technique tagging and one-click case promotion |
+| Threat metrics with alert severity breakdown and analyst workload distribution | Active alert queue with MITRE ATT&CK technique tagging and one-click case promotion |
 
 | Cases | Threat Intelligence |
 |-------|-------------------|
 | ![Cases](screenshots/cases.png) | ![Threat Intel](screenshots/threat-intelligence.png) |
-| Full incident timeline with artifact linking, analyst notes, and severity tracking | IOC enrichment via AlienVault OTX and VirusTotal with automated reputation scoring |
+| Full incident timeline with artifact linking, analyst notes, and severity tracking | IOC management and indicator reputation tracking |
 
 | Malware Analysis | Threat Hunting |
 |-----------------|----------------|
 | ![Malware](screenshots/malware-analysis.png) | ![Hunting](screenshots/threat-hunting.png) |
-| Sandbox verdict display with SHA256 tracking, threat score, and case linkage | Fast indexed querying over security telemetry with JSONB binary search |
+| Malware artifact tracking with SHA256 tracking and case linkage | Threat hunting query workspace |
 
 | SOAR Automation |
 |----------------|
 | ![SOAR](screenshots/soar.png) |
-| Drag-and-drop playbook builder with ~120ms execution overhead and automated containment actions |
+| Drag-and-drop playbook builder interface |
 
 ## 🎥 Demo Walkthrough
 
 [![Watch Demo](screenshots/dashboard.png)](https://loom.com/REPLACE_WITH_YOUR_LINK)
 
-> 3-min walkthrough — Docker boot → Alert ingestion → Case creation → SOAR playbook execution
+> Walkthrough — Docker boot → Alert ingestion → Case creation
 
 *Record free at [loom.com](https://loom.com)*
 
@@ -121,9 +135,9 @@ Built with modern architectural patterns (Next.js App Router, FastAPI, PostgreSQ
 
 ## 🏗️ System Architecture
 
-Sentrix is designed as a modern, high-performance web application utilizing a microservices-inspired monolithic architecture.
+Sentrix is designed as a high-performance web application utilizing a microservices-inspired monolithic architecture.
 
-```mermaid
+`mermaid
 graph TD
     Client[Web Browser] -->|HTTPS| Proxy[Nginx / Traefik]
     
@@ -144,20 +158,18 @@ graph TD
     subgraph "Data Tier"
         Repos --> PG[(PostgreSQL 16 + SQLAlchemy 2.0)]
         Repos --> Redis[(Redis 7)]
-        Repos --> Qdrant[(Qdrant Vector DB)]
     end
     
     style Client fill:#1e293b,color:#fff,stroke:#334155
     style UI fill:#0ea5e9,color:#fff,stroke:#0284c7
     style API fill:#10b981,color:#fff,stroke:#059669
     style PG fill:#3b82f6,color:#fff,stroke:#2563eb
-    style Redis fill:#ef4444,color:#fff,stroke:#dc2626
-    style Qdrant fill:#f43f5e,color:#fff,stroke:#e11d48
-```
+    style Redis fill:#ef4444,color:#dc2626
+`
 
 ### Request Lifecycle
 
-```mermaid
+`mermaid
 sequenceDiagram
     participant Client
     participant FastAPI
@@ -173,7 +185,7 @@ sequenceDiagram
     Database-->>Service: Return ORM Models
     Service-->>FastAPI: Return Pydantic Schemas
     FastAPI-->>Client: JSON Response
-```
+`
 
 ---
 
@@ -181,7 +193,7 @@ sequenceDiagram
 
 The primary goal of Sentrix is to streamline the incident response pipeline.
 
-```mermaid
+`mermaid
 flowchart TD
     A[Alert Ingestion] --> B{Triage}
     
@@ -194,7 +206,7 @@ flowchart TD
     F --> G[Threat Hunting]
     G --> H[Malware Analysis]
     
-    H --> I[Execute SOAR Playbook]
+    H --> I[Assign SOAR Playbook]
     I --> J[Containment & Remediation]
     
     J --> K[Executive Reporting]
@@ -203,7 +215,7 @@ flowchart TD
     style I fill:#8b5cf6,color:#fff,stroke:#7c3aed
     style A fill:#3b82f6,color:#fff,stroke:#2563eb
     style L fill:#10b981,color:#fff,stroke:#059669
-```
+`
 
 ---
 
@@ -216,15 +228,14 @@ flowchart TD
 | **State & Fetching** | TanStack React Query | Advanced caching, deduplication, and polling. |
 | **Backend API** | FastAPI (Python 3.11) | Ultra-fast, async Python web framework. |
 | **Database (Relational)** | PostgreSQL 16 + SQLAlchemy 2.0 | Primary data store with fully async ORM. |
-| **Caching & PubSub** | Redis 7 | JWT blacklisting, rate-limiting, and ephemeral state. |
-| **Vector Search (AI)** | Qdrant | Similarity search for Threat Hunting and AI reasoning. |
+| **Caching & Auth** | Redis 7 | JWT blacklisting and ephemeral state. |
 | **Containerization** | Docker + Docker Compose | Isolated, reproducible deployment environments. |
 
 ---
 
 ## 📁 Project Structure
 
-```text
+`	ext
 SentriX/
 ├── backend/               # FastAPI backend application
 │   ├── app/               # Main application logic (API, Models, Services)
@@ -239,15 +250,15 @@ SentriX/
 ├── assets/                # Logos and banners
 ├── .github/               # Issue templates and PR guidelines
 └── docker-compose.yml     # Local orchestration
-```
+`
 
 ---
 
 ## 🗄️ Database Schema
 
-Built on strict SQLAlchemy 2.0 ORM models with `UUID` primary keys, soft-deletion capabilities, and robust cascading relationships.
+Built on strict SQLAlchemy 2.0 ORM models with UUID primary keys, soft-deletion capabilities, and robust cascading relationships.
 
-```mermaid
+`mermaid
 erDiagram
     USERS ||--o{ CASES : "assigns"
     USERS {
@@ -282,7 +293,7 @@ erDiagram
         string verdict
         int threat_score
     }
-```
+`
 
 ---
 
@@ -290,25 +301,16 @@ erDiagram
 
 Sentrix provides beautiful Swagger/OpenAPI documentation auto-generated by FastAPI.
 
-- **Swagger UI**: `/docs` (e.g. `http://localhost:8000/docs`)
-- **ReDoc**: `/redoc` (e.g. `http://localhost:8000/redoc`)
+- **Swagger UI**: /docs (e.g. http://localhost:8000/docs)
+- **ReDoc**: /redoc (e.g. http://localhost:8000/redoc)
 
 Example Request (Create Alert):
-```bash
+`ash
 curl -X POST "http://localhost:8000/api/v1/alerts" \
      -H "Authorization: Bearer <your_token>" \
      -H "Content-Type: application/json" \
      -d '{"rule_name": "Suspicious Login", "severity": "HIGH", "status": "OPEN"}'
-```
-
----
-
-## 🔍 Supported Integrations
-
-- **OSINT Feeds**: AlienVault OTX, VirusTotal, IBM X-Force.
-- **SIEM Connectors**: Native webhook ingest points for Splunk, Elastic, and Microsoft Sentinel.
-- **Sandboxes**: Cuckoo Sandbox, Joe Sandbox (via API).
-- **Identity**: Active Directory / Entra ID (SAML/OIDC support planned for v1.2).
+`
 
 ---
 
@@ -316,9 +318,9 @@ curl -X POST "http://localhost:8000/api/v1/alerts" \
 
 ### 1-Click Startup (Docker)
 
-Get the entire Sentrix platform running locally in under 60 seconds:
+Get the entire Sentrix platform running locally:
 
-```bash
+`ash
 # 1. Clone the repository
 git clone https://github.com/alive-xd/SentriX.git
 cd SentriX
@@ -326,43 +328,43 @@ cd SentriX
 # 2. Copy the environment variables
 cp backend/.env.example backend/.env
 
-# 3. Start the infrastructure (Postgres, Redis, Qdrant, Backend)
+# 3. Start the infrastructure (Postgres, Redis, Backend)
 docker compose up -d
 
 # 4. In a separate terminal, install and start the frontend
 cd frontend
 npm install
 npm run dev
-```
+`
 
 Navigate to [http://localhost:3000](http://localhost:3000) and login with the default seeded credentials:
-- **Email**: `admin@sentrix.local`
-- **Password**: `admin`
+- **Email**: dmin@sentrix.local
+- **Password**: dmin
 
 ---
 
 ## ⚙️ Installation
 
-For bare-metal production installation without Docker:
-1. Ensure **PostgreSQL 16**, **Redis 7**, and **Qdrant** are running on your host.
-2. Setup a Python 3.11 virtual environment for the backend and install `backend/requirements.txt`.
-3. Run migrations via `alembic upgrade head`.
-4. Run the backend via `uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4`.
-5. Build the frontend via `npm run build` and start via `npm run start`.
+For bare-metal local installation without Docker:
+1. Ensure **PostgreSQL 16** and **Redis 7** are running on your host.
+2. Setup a Python 3.11 virtual environment for the backend and install ackend/requirements.txt.
+3. Run migrations via lembic upgrade head.
+4. Run the backend via uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4.
+5. Build the frontend via 
+pm run build and start via 
+pm run start.
 
 ---
 
 ## 🔑 Environment Variables
 
-Crucial environment variables defined in `backend/.env`:
+Crucial environment variables defined in ackend/.env:
 
 | Variable | Description |
 | :--- | :--- |
-| `DATABASE_URL` | PostgreSQL Async connection string (`postgresql+asyncpg://`) |
-| `REDIS_URL` | Redis connection string (`redis://`) |
-| `SECRET_KEY` | 256-bit secret for JWT Signing. **Must be rotated in production.** |
-| `QDRANT_URL` | Vector DB connection string |
-| `VIRUSTOTAL_API_KEY` | Optional: Your VirusTotal API Key for Malware Analysis |
+| DATABASE_URL | PostgreSQL Async connection string (postgresql+asyncpg://) |
+| REDIS_URL | Redis connection string (edis://) |
+| SECRET_KEY | 256-bit secret for JWT Signing. **Must be rotated in production.** |
 
 ---
 
@@ -370,63 +372,40 @@ Crucial environment variables defined in `backend/.env`:
 
 To populate the database with realistic alerts, cases, malware samples, and threat intelligence for testing:
 
-```bash
+`ash
 docker compose exec backend python -m scripts.seed_database
-```
-This automatically inserts ~1,000 contextual records into the database.
+`
+This automatically inserts exactly 485 alerts, 120 cases, 300 threat indicators, 150 assets, and 1000 audit logs into the database.
 
 ---
 
 ## 🔐 Security Features
 
-- **JWT (JSON Web Tokens)**: Secure, short-lived tokens with Redis-backed refresh token rotation and immediate logout blocklisting.
-- **Password Hashing**: Industry-standard `bcrypt` hashing via `passlib`.
-- **RBAC (Role-Based Access Control)**: Granular permission structures preventing privilege escalation.
+- **JWT (JSON Web Tokens)**: Secure tokens with Redis-backed refresh token rotation and logout blocklisting.
+- **Password Hashing**: Industry-standard crypt hashing via passlib.
+- **Foundational Role-Based Access Control**: Database structures preventing privilege escalation.
 - **SQL Injection Protection**: Pure reliance on SQLAlchemy ORM parameterized queries.
 - **Input Validation**: Pydantic v2 schemas rigorously sanitize all incoming API payloads.
 
 ---
 
-## 🛡️ Threat Model
+## 🛡️ Architecture & Threat Model
 
-- **Trust Boundaries**: The API Gateway (FastAPI) acts as the sole entry point to the data tier. All internal inter-service communication (PostgreSQL, Redis, Qdrant) is assumed secure behind the internal Docker bridge network.
-- **Data at Rest**: Sensitive IOCs and Analyst passwords are cryptographically secured.
-- **Data in Transit**: Production deployments must terminate TLS 1.3 at the Reverse Proxy (Nginx/Traefik).
-
----
-
-## ⚡ Performance & Optimization
-
-- **Asynchronous Execution**: The entire Python stack is fully asynchronous, capable of handling thousands of concurrent SIEM logs.
-- **Client-Side Caching**: `staleTime` and `refetchInterval` optimizations in React Query prevent redundant dashboard polling.
-- **Database Indexing**: Heavy B-Tree indexing on temporal data (Timestamps) and JSONB binary indexing on payload signatures.
-
----
-
-## 📈 Performance Benchmarks
-
-*(Tests conducted on a standard AWS `t3.medium` instance)*
-- **Alert Ingestion API (`POST /alerts`)**: ~1,200 Req/Sec.
-- **Dashboard Aggregation Query**: ~45ms.
-- **Vector Search (Qdrant)**: ~15ms across 100k embedded vectors.
+- **Trust Boundaries**: The API Gateway (FastAPI) acts as the sole entry point to the data tier. All internal inter-service communication (PostgreSQL, Redis) is assumed secure behind the internal Docker bridge network.
+- **Data at Rest**: Sensitive Analyst passwords are cryptographically secured.
+- **Data in Transit**: Production deployments should terminate TLS at a Reverse Proxy.
 
 ---
 
 ## 🧪 Testing
 
-Sentrix has undergone rigorous End-to-End (E2E) testing and validation to guarantee production readiness before release.
-
-### Final Acceptance Audit
-1. **Environment Verification**: Verified `docker-compose up -d` boots all services.
-2. **Authentication & RBAC**: Confirmed full JWT lifecycle and role restrictions.
-3. **Module Verification**: Rigorous CRUD testing on Dashboard, Alerts, Cases, Malware, Threat Intel, and SOAR.
-4. **E2E SOC Workflow**: Successfully simulated a real-world breach scenario ("Suspicious Powershell Execution"), mapping from Alert -> Case -> Malware Sandbox -> SOAR Containment.
+Sentrix has a foundational test suite to ensure API health and basic authentication enforcement.
 
 Run the unit tests locally:
-```bash
+`ash
 cd backend
 pytest -v
-```
+`
 
 ---
 
@@ -436,25 +415,10 @@ The entire platform documentation is self-contained within this README to ensure
 
 ---
 
-## 🗺️ Roadmap
-
-- **Q3 2026**: RAG (Retrieval-Augmented Generation) enhancements using Qdrant for automated Case Summarization.
-- **Q4 2026**: Multi-Tenancy (MSSP) support and Active Directory SSO Integrations.
-- **2027**: Official Helm Charts for Kubernetes deployments.
-
----
-
-## 🐞 Known Limitations
-
-- **Log Forwarding**: Native Syslog/CEF forwarding is not yet implemented (must be pushed via API).
-- **Clustering**: High-availability active-active scaling requires external managed Redis and PostgreSQL instances.
-
----
-
 ## ❓ FAQ
 
 **Q: Can I use Sentrix to replace my SIEM?**
-A: No, Sentrix is a SOAR and Case Management platform designed to sit *on top* of your SIEM (Elastic, Splunk, Sentinel).
+A: No, Sentrix is designed as a SOAR and Case Management workspace intended to sit *on top* of a SIEM.
 
 **Q: Is there a paid Enterprise version?**
 A: No. Sentrix is 100% open-source under the MIT license.
@@ -481,14 +445,9 @@ Special thanks to the open-source projects that made this possible:
 - **FastAPI** by Tiangolo
 - **Next.js** by Vercel
 - **PostgreSQL** community
-- **Qdrant** Vector DB team
 
 ---
 
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<div align="center">
-  <i>Engineered with precision for the modern SOC.</i>
-</div>
