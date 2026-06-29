@@ -8,24 +8,6 @@
   <p><strong>A Modern Open-Source Security Operations Center (SOC) Workspace</strong></p>
 
   <p>
-    <a href="https://github.com/alive-xd/SentriX/stargazers">
-      <img src="https://img.shields.io/github/stars/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub Stars" />
-    </a>
-    <a href="https://github.com/alive-xd/SentriX/network/members">
-      <img src="https://img.shields.io/github/forks/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub Forks" />
-    </a>
-    <a href="https://github.com/alive-xd/SentriX/issues">
-      <img src="https://img.shields.io/github/issues/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="GitHub Issues" />
-    </a>
-  </p>
-
-  <p>
-    <a href="https://github.com/alive-xd/SentriX/actions/workflows/build.yml">
-      <img src="https://img.shields.io/github/actions/workflow/status/alive-xd/SentriX/build.yml?branch=main&label=Build&style=flat-square&color=3b82f6" alt="Build Status" />
-    </a>
-    <a href="https://github.com/alive-xd/SentriX/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/alive-xd/SentriX?style=flat-square&color=3b82f6" alt="License" />
-    </a>
     <a href="https://nextjs.org">
       <img src="https://img.shields.io/badge/Next.js-14+-black?style=flat-square&logo=next.js" alt="Next.js" />
     </a>
@@ -38,7 +20,8 @@
     <a href="https://redis.io/">
       <img src="https://img.shields.io/badge/Redis-7.0+-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
     </a>
-  </p>
+
+
 
   <p>
     <strong>Designed using enterprise architecture patterns for modern blue teams.</strong>
